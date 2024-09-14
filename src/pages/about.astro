@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'Quem Somos',
 };
 ---
 
@@ -15,60 +15,58 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Quem Somos"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: '~/assets/images/agencia.png',
+      alt: 'Agência 4D',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Fazemos Design <br />
+      com <span class="text-accent dark:text-white highlight"> propósito</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+     A construção de experiências incríveis e sistemas com ótima performance. Nossa plataforma de design oferece diversos serviços na área de branding (BRA), design de sistemas (SYS) e experiência do usuário (UX).
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Estatísticas"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Cidades', amount: '42' },
+      { title: 'Sócios', amount: '4' },
+      { title: 'Clientes', amount: '12' },
+      { title: 'Prêmios', amount: '24' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Nosso modelo de trabalho"
+    subtitle="Atendemos de forma remota em todo o Brasil, ou de forma presencial na região Zona da Mata de MG, e nas Capitais Rio de Janeiro, São Paulo, Salvador e Vitória"
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Educação e Treinamento',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+          'Treinamentos em desenvolvimento de sistemas, design de experiência do usuário (UX), design system e linguagens de programação',
         icon: 'tabler:template',
       },
       {
-        title: 'Interior Design',
+        title: 'Design',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+          'Uma ampla gama de serviços de design que vão desde design de produto, design gráfico, design de interiores, e design de softwares e aplicativos.',
         icon: 'tabler:template',
       },
       {
-        title: 'Photography',
+        title: 'Sistemas',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+          'Do planejamento à execução, oferecemos consultoria em desenvolvimento de sistemas, capacitação, construção de Saas e integração de sistemas. Veja o catálogo.',
         icon: 'tabler:template',
       },
     ]}
@@ -81,68 +79,68 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Social Media',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+          'Conheça nosso pacote de social media clicando no link.',
         icon: 'tabler:template',
       },
       {
         title: 'Blog',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+          'Acompanhe de perto nossa rotina acessando nosso blog.',
         icon: 'tabler:template',
       },
       {
-        title: 'Business',
+        title: 'Negócio',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+          'Construímos valor para o seu negócio por meio da criação de propósito. Veja nossos cases de Saas e Empreendedorismo.',
         icon: 'tabler:template',
       },
       {
         title: 'Branding',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+          'Credenciados com o método Ana Couto - LAJE, o maior escritório de Branding da América Latina. Nós te mostramos como surfar nas ondas produto, marca e pessoas',
         icon: 'tabler:template',
       },
       {
-        title: 'Medical',
+        title: 'Design de produto',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+          'Da inovação ao redesign, design de produtos premiados no cenário nacional e global',
         icon: 'tabler:template',
       },
       {
-        title: 'Fashion Design',
+        title: 'Design gráfico',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+          'Com ênfase no mercado digital, nós estamos preparados para elevar o patamar da sua comunicação visual, identidade e peças de publicidade.',
         icon: 'tabler:template',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/agenci.png',
+      alt: 'Agência 4D ',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Nossos valores"
+    subtitle="Antenados com o mundo contemporâneo."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Atento às mudanças',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'A Internet e a Inteligência Artificial impôs novos desafios. Por isso temos que ficar atentos para nos mantermos atualizados.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Construindo um mundo mais justo',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Apesar de todas as mazelas, a humanidade precisa se unir para construir um mundo mais justo.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Gerando valor e criando oportunidades',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'As transformações podem ter caráter devastador. Mas com planejamento e adaptação podemos criar diferencias no mercado e ser parte da mudança.',
       },
     ]}
   />
@@ -159,20 +157,20 @@ const metadata = {
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        title: 'Inovação e Sustentabilidade',
+        description: 'A sustentabilidade está no nosso DNA. Saiba como tornar a sua empresa parte da [[transformação verde]].',
         icon: 'tabler:globe',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Uma comunidade fortalecida',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+          'Nós colocamos você em contato com o seu público para criar comunidades cada vez mais fortes',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Lugar de destaque',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+          'Nós queremos destaque para nós e para nossos clientes. Por isso que nós estamos sempre nos melhores lugares.',
         icon: 'tabler:award',
       },
     ]}
@@ -181,25 +179,25 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
+    title="Presença Estratégica"
+    tagline="Saiba como e onde nos encontrar"
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'MG',
+        description: 'Juiz de Fora, Ubá e Belo Horizonte',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'RJ',
+        description: 'Rio de Janeiro',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        title: 'SP',
+        description: 'São Paulo',
       },
       {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'ES',
+        description: 'Vitória ES',
       },
     ]}
   />
@@ -207,20 +205,20 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Suporte técnico"
+    tagline="Contato"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Whatsapp',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+          '32 98405 2664 (Ricardo) |  32 98499-1884 (Ítalo)',
         icon: 'tabler:messages',
       },
       {
-        title: 'Call us',
+        title: 'Telefone',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+          '32 98405 2664 (Ricardo) |  32 98499-1884 (Ítalo)',
         icon: 'tabler:headset',
       },
     ]}

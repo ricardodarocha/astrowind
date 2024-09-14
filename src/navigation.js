@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Design',
       links: [
         {
           text: 'SaaS',
@@ -24,64 +24,27 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'Sistemas',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Design System',
+          href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'SaaS',
+          href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Startup',
+          href: getPermalink('/homes/startup'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Mobile App',
+          href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Personal',
+          href: getPermalink('/homes/personal'),
         },
       ],
     },
@@ -115,59 +78,64 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Portfolio', href: 'www.behance.com/agenciadesign4d', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Serviços',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Design', href: '#' },
+        { text: 'Desenvolvimento de sistemas', href: '#' },
+        { text: 'Cursos e treinamentos', href: '#' },
+        { text: 'Nossa equipe', href: '#' },
+        { text: 'Casos de sucesso', href: '#' },
+        { text: 'Orçamento', href: '#' },
+        { text: 'Comunidade', href: '#' },
+        { text: 'Acesso Exclusivo para Clientes', href: '#' },
+        { text: 'Recursos para downloads', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Plataformas',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Material Design', href: '#' },
+        { text: 'Design System', href: '#' },
+        { text: 'LAJE Branding Ana Couto', href: '#' },
+        { text: 'Windows', href: '#' },
+        { text: 'Mac - IOs', href: '#' },
+        { text: 'Android', href: '#' },
+        { text: 'Adobe', href: '#' },
+        { text: 'Solidworks', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Suporte',
       links: [
         { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Comunidade Agência 4D', href: '#' },
+        { text: 'Nossos serviços', href: '#' },
+        { text: 'Soft Skills', href: '#' },
+        { text: 'Status dos serviços', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Companhia',
       links: [
-        { text: 'About', href: '#' },
+        { text: 'Sobre', href: '#' },
         { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Carreira', href: '#' },
+        { text: 'Assessoria de Imprensa', href: '#' },
+        { text: 'Acessibilidade e Inclusão', href: '#' },
+        { text: 'Impacto Social', href: '#' },
+        { text: 'Loja', href: '#' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Termos e Políticas', href: getPermalink('/terms') },
+    { text: 'LGPD e Política de Privacidade', href: getPermalink('/lgpd') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
@@ -178,6 +146,6 @@ export const footerData = {
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    Agradecimentos para <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a>.
   `,
 };
